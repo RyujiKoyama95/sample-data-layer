@@ -14,12 +14,12 @@ abstract class SampleDatabase: RoomDatabase() {
 
         fun getDatabase(context: Context): SampleDatabase {
             return sampleDatabase ?: synchronized(this) {
-                val instanse = Room.databaseBuilder(
+                val instance = Room.databaseBuilder(
                     context.applicationContext,
                     SampleDatabase::class.java,
                     "sample_database"
                 ).fallbackToDestructiveMigration().build()
-                sampleDatabase = instanse
+                sampleDatabase = instance
                 return sampleDatabase as SampleDatabase
             }
         }
