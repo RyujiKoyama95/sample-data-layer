@@ -10,7 +10,7 @@ interface SampleDao {
     @Query("SELECT * FROM sample_data")
     suspend fun getData()
     @Insert
-    suspend fun insert(title: String)
-    @Delete
-    suspend fun delete(id: Int)
+    suspend fun insert(data: SampleData)
+    @Query("DELETE FROM sample_data")
+    suspend fun deleteAll()
 }

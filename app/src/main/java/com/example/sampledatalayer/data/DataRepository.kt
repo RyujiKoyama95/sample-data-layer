@@ -12,13 +12,13 @@ class DataRepository(
         dao = database.sampleDao()
     }
 
-    suspend fun createData(title: String) {
-        dao.insert(title)
+    suspend fun createData(data: SampleData) {
+        dao.insert(data)
     }
     suspend fun getData() {
         dao.getData()
     }
-    suspend fun deleteData(id: Int) {
-        dao.delete(id)
+    suspend fun deleteAllData(id: Int) {
+        dao.deleteAll()
     }
 }
