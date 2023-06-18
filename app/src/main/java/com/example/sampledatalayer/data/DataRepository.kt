@@ -11,9 +11,9 @@ class DataRepository(
         dao.insert(data)
     }
     suspend fun getData(): List<SampleData> {
-        dao.getData()
+        return dao.getData()
     }
-    suspend fun deleteAllData(id: Int) {
+    suspend fun deleteAllData() {
         dao.deleteAll()
     }
 }

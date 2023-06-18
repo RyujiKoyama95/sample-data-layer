@@ -8,7 +8,7 @@ import androidx.room.Query
 @Dao
 interface SampleDao {
     @Query("SELECT * FROM sample_data")
-    suspend fun getData()
+    suspend fun getData(): List<SampleData>
     @Insert
     suspend fun insert(data: SampleData)
     @Query("DELETE FROM sample_data")
