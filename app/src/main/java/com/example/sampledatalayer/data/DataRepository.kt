@@ -10,7 +10,7 @@ class DataRepository(
     suspend fun createData(data: SampleData) {
         dao.insert(data)
     }
-    suspend fun getData() {
+    suspend fun getData(): List<SampleData> {
         dao.getData()
     }
     suspend fun deleteAllData(id: Int) {
