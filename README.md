@@ -1,7 +1,7 @@
 Sample-Data-Layer
 ==================================
 
-Solution code for Android Basics in Kotlin.
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 Introduction
 ------------
@@ -10,10 +10,7 @@ xxx
 xxx
 xxx
 
-Pre-requisites
---------------
-
-You need to know:
+xxx xxx xxx:
 - aaa
 - bbb
 - ccc
